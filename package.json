@@ -13,7 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "export-images":"gps2json -n=images -f=./public/imgs -o=./public/json"
+    "get-gps":"gps2json -n=images -f=./public/imgs -o=./public/json",
+    "resize-images": "node ./scripts/resize.js"
   },
   "devDependencies": {
     "gps2json": "^1.0.0"
