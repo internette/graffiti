@@ -14,7 +14,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "get-gps":"gps2json -n=images -f=./public/imgs -o=./public/json",
-    "resize-images": "node ./scripts/resize.js"
+    "resize-images": "node ./scripts/resize.js",
+    "images": "npm run resize-images && npm run get-gps"
   },
   "devDependencies": {
     "gps2json": "^1.0.0"
