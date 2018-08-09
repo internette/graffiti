@@ -18,11 +18,13 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/styles/ --watch --recursive",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "add-primary-color": "node ./scripts/primary-color.js",
     "get-gps": "gps2json -n=images -i=./public/imgs/full_width -o=./public/json -f=geojson",
     "resize-images": "node ./scripts/resize.js",
-    "images": "npm run resize-images && npm run get-gps"
+    "images": "npm run resize-images && npm run get-gps && npm run add-primary-color"
   },
   "devDependencies": {
-    "gps2json": "^1.1.1"
+    "gps2json": "^1.1.1",
+    "node-vibrant": "^3.0.0"
   }
 }
