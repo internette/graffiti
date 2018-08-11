@@ -24,10 +24,15 @@
     position: absolute;
     border-left: 0.75rem solid transparent;
     border-right: 0.75rem solid transparent;
-    border-top: 0.75rem solid rgba(0, 0, 0, 0.2);
     bottom: -0.75rem;
     left: 50%;
     transform: translateX(-50%); }
+  .mapboxgl-popup-anchor-bottom .mapbox-popup:before, .mapboxgl-popup-anchor-bottom .mapbox-popup:after {
+    border-top: 0.75rem solid rgba(0, 0, 0, 0.2); }
+  .mapboxgl-popup-anchor-top .mapbox-popup:before, .mapboxgl-popup-anchor-top .mapbox-popup:after {
+    border-bottom: 0.75rem solid rgba(0, 0, 0, 0.2);
+    bottom: unset;
+    top: -0.75rem; }
 
 .popup-img {
   position: absolute;

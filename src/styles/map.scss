@@ -35,10 +35,21 @@
     position: absolute;
     border-left: $arrow-size solid transparent;
     border-right: $arrow-size solid transparent;
-    border-top: $arrow-size solid $color;
     bottom: -#{$arrow-size};
     left: 50%;
     transform: translateX(-50%);
+  }
+  .mapboxgl-popup-anchor-bottom & {
+    &:before, &:after {
+      border-top: $arrow-size solid $color;
+    }
+  }
+  .mapboxgl-popup-anchor-top & {
+    &:before, &:after {
+      border-bottom: $arrow-size solid $color;
+      bottom: unset;
+      top: -#{$arrow-size};
+    }
   }
 }
 
